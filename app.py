@@ -10,4 +10,10 @@ app=Flask(__name__)
 def create_store():
     pass
 
+#GET /store/<string:name>
+@app.rout('/store/<string:name>')
+def get_store(name):
+    pass
+
+
 app.run()
