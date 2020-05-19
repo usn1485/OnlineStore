@@ -15,5 +15,20 @@ def create_store():
 def get_store(name):
     pass
 
+#GET /store
+@app.route('/store')
+def get_store():
+    pass
+
+#POST /store/<string:name>/item{name:,price:}
+@app.route('/store/<string:name>/item', methods=['POST'])
+def create_store(name):
+    pass
+
+#GET/store/<string:name>/item{name:,price:}
+@app.route('/store/<string:name>/item', methods=['GET'])
+def get_store(name):
+    pass
+
 
 app.run()
